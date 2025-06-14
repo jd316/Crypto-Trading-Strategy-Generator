@@ -1,0 +1,47 @@
+=============================================
+CRYPTO TRADING STRATEGY GENERATOR - INSTALLATION NOTES
+=============================================
+
+QUICK START GUIDE
+----------------
+
+## macOS Installation
+
+1. Open Terminal and navigate to the extracted folder
+2. Make the run script executable:
+   chmod +x run_app.sh
+3. Run the application:
+   ./run_app.sh
+
+Common issues on macOS:
+- If you encounter TA-Lib errors, install it with Homebrew:
+  brew install ta-lib
+- If you're using M1/M2 Mac and encounter numpy issues, try:
+  pip install --upgrade numpy --no-binary numpy
+
+## Linux Installation
+
+1. Open Terminal and navigate to the extracted folder
+2. Make the run script executable:
+   chmod +x run_app.sh
+3. Run the application:
+   ./run_app.sh
+
+Common issues on Linux:
+- For Debian/Ubuntu systems, you may need to install:
+  sudo apt-get update
+  sudo apt-get install build-essential libssl-dev
+- For RedHat/Fedora systems, you may need:
+  sudo dnf install gcc openssl-devel
+
+## TROUBLESHOOTING
+
+If you encounter any issues:
+1. Run the import test to verify all dependencies:
+   python import_test.py
+2. Check for any missing dependencies:
+   pip install -r requirements.txt
+3. If you see "No module named 'python_dotenv'" or "No module named 'rpds_py'", this is a known issue with import names:
+   pip install python-dotenv rpds-py
+
+For any other issues, please refer to the README.md file or contact support. 
